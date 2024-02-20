@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonusfaber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--Global CSS Code Start-->
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+       
+    *{
+        margin: 0;
+        padding: 0;
+       }
+    img{
+        max-width: 100%;
+    }  
+
+    :root{
+        --parimary-font:"Noto Serif Display", serif;
+        ---secondary-font:"Inter", sans-serif;
+    } 
+    .text{
+    font-family: var(---secondary-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #171717;
+  } 
+  
+  .btn_class{
+    padding: 12px 20px;
+    border-radius: 60px;
+    color: #faf6f2;
+    background-color: transparent;
+    border: 1px solid #faf6f2;
+    transition: background-color .5s ease-in,color .5s ease-in;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(---secondary-font);
+    display: inline-block;
+  }
+  .btn_class:hover{
+    background-color: #faf6f2;
+    color: #171717;
+  }
+  .title{
+    font-family: var(--parimary-font);
+    font-size: 42px;
+    line-height: 43px;
+    font-weight: 300;
+    color: #171717;
+   }
+   @media (max-width: 767px) {
+    .title{
+    font-size: 33px;
+    line-height: 38px;
+   }
+}
+
+    </style>
+  <!--Global CSS Code End-->
+
+
+
+<!-- -----------------------------------Hero Banner Section Start------------------------------------------------->
+<Style>
+.banner_video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.video_tag{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video_overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 1;
+}
+.banner_content {
+    position: relative;
+    z-index: 2;
+    top: 60%;
+    transform: translateY(-60%);
+    text-align: center;
+}
+.banner_title{
+ font-family: var(--parimary-font);
+ text-transform: uppercase;
+ text-align: center;
+ font-size: 80px;
+ line-height: 80px;
+ font-weight: 400;
+ color: #ffffff;
+ margin-bottom: 20px;
+}
+.banner_text{
+    font-family: var(---secondary-font);
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.banner_btn{
+ padding: 4px;
+ background-color: #faf6f2;
+ border-radius: 60px;
+ display: inline-flex;
+align-items: center;
+text-decoration: none;
+transition: color .6s ease-in,background-color .7s ease-in;
+
+}
+.banner_btn:hover{
+    background-color: #333333;
+}
+.banner_btn:hover .banner_btn_text{
+    color: #faf6f2;
+}
+.banner_btn_text{
+    padding-inline: 16px;
+    font-family: var(---secondary-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #171717;
+    transition: color .6s ease-in,background-color .7s ease-in;
+}
+
+.banner_btn_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner_btn_icon i{
+    font-size: 17px;
+    color: #171717;
+}
+@media (max-width: 767px) {
+ .banner_title{
+    font-size: 60px;
+    line-height: 65px;
+ }
+}
+    
+</Style>
+
+<Section style="position: relative; height: 100vh;">
+      <div class="banner_video">
+            <div class="video_overlay"></div>
+             <video class="video_tag" autoplay loop muted src="images/homepage-hero-video-optimized.mp4"></video>
+      </div>
+
+    <div class="banner_content">
+        <h2 class="banner_title">ARTISAN OF SOUND</h2>
+        <h3 class="banner_text">Crafting immersive sensory experiences.</h3>
+        <a class="banner_btn" href="#"> <p class="banner_btn_text">Explore all Collections</p> <div class="banner_btn_icon" ><i class="fa-solid fa-arrow-right"></i></div></a>
+        
+    </div>
+</Section>
+<!-- ----------------------------------Hero Banner Section End---------------------------------- -->
+
+<!------------------------------------ Banner Section Start ---------------------------------------->
+<Style>
+    .background_img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .background_img_tag{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .img_overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: radial-gradient(ellipse at bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,.6) 40%,rgba(0,0,0,.4) 60%);
+        z-index: 1;
+    }
+   .banner_section{
+     position: absolute;
+     bottom: 0;
+     text-align: center;
+     padding-bottom: 80px;
+     z-index: 2;
+     width: 100%;
+   }
+   .banner_section .title{
+    margin: 0px 0px 20px 0px;
+    color: #faf6f2;
+   }
+.banner_section .text{
+ color: #ffffff;
+ max-width: 450px;
+ margin: auto;
+ margin-bottom: 20px;
+}
+
+
+</Style>
+<section style="position: relative; height: 100vh;">
+    
+    <div class="background_img">
+        <img class="background_img_tag" src="images/3840x2160.webp" alt="">
+         <div class="img_overlay"></div>
+    </div>
+
+    <div class="banner_section">
+        <h2 class="title">SUPREMA</h2>
+        <p class="text">Sonus faber's most ambitious project to date, Suprema reflects the pinnacle of audio engineering.</p>
+        <a class="btn_class" href="#">Discover Suprema</a>
+    </div>
+
+</section>
+<!------------------------------------ Banner Section End ---------------------------------------->
+
+
+<!------------------------------------ Card Section Start ---------------------------------------->
+<Style>
+ 
+ .container{
+    max-width: 1260px;
+    margin: auto;
+ }
+
+ .hadding{
+    text-align: center;
+    margin-bottom: 100px;
+ }
+ 
+ .hadding .title{
+    margin-bottom: 20px;
+ }
+
+ .hadding .text{
+    max-width: 640px;
+    margin: auto;
+   
+ }
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .col_6{
+    flex-basis: 50%;
+    max-width: 50%;
+ }
+  .left .card{
+    background-color: #333333;
+  }
+  .left .card .title, .left .card .text {
+    color: #faf6f2;
+    margin-bottom: 20px;
+  }
+
+  .right .card{
+    background-color: #d9d9d5;
+  }
+  .right .card .title, .right .card .text {
+    margin-bottom: 20px;
+  }
+  .right .btn_class{
+    border-color: #000000;
+    color: #000000;
+  }
+  .right .btn_class:hover{
+    border-color: #000000;
+    background-color: #000000;
+    color: #d9d9d5;
+  }
+ .text_box{
+    padding: 60px;
+ }
+  .row{
+    margin: 0px -10px;
+  }
+ .left , .right{
+    padding: 0px 10px;
+ }
+ @media (max-width: 767px) {
+    .col_6{
+    flex-basis: 100%;
+    max-width: 100%;
+ }
+ .row{
+    row-gap: 20px;
+ }
+}
+  
+</Style>
+
+<Section style="padding: 80px 0px;">
+    <div class="container">
+        <div class="hadding">
+            <h2 class="title">OUR UNIQUE ESSENCE</h2>
+            <p class="text">Sonus faber's artisans of sound meticulously handcraft instruments that elevate music and cinema to its highest form.</p>
+        </div>
+
+        <div class="row">
+            <div class="col_6">
+                  <div class="left">
+                     <div class="card">
+                        <div class="text_box">
+                            <h2 class="title">SPEAKERS</h2>
+                            <p class="text">Signature speakers designed to reproduce sound in its most authentic and captivating form.</p>
+                            <a class="btn_class" href="#">Discover All Speakers</a>
+                        </div>
+                        <div class="img_box">
+                            <img src="images/1920x10802.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+            </div>
+            <div class="col_6">
+                <div class="right">
+                    <div class="card">
+                        <div class="text_box">
+                            <h2 class="title">CUSTOM INSTALLATION</h2>
+                            <p class="text">Custom solutions for immersive home theaters, multi-room distributed audio systems, and outdoor spaces.</p>
+                            <a class="btn_class" href="#">Discover CI-Fi</a>
+                        </div>
+                        <div class="img_box">
+                            <img src="images/1920x1080.png" alt="">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------ Card Section end ---------------------------------------->
+
+
+
+</body>
+</html>
